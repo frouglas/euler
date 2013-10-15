@@ -11,22 +11,6 @@ getLim <- function() {
   print("test")
 }
 
-primeList <- function(lim, primes) {
-  if (length(primes)==0) {
-    init = 2
-  } else {
-    init = max(primes) + 1
-  }
-  pri = 1
-  for (i in primes) {
-    if (i > sqrt(init)) break
-    if (init %% i == 0) {
-      pri = 0
-      break
-    }     
-  }
-}
-
 nextPrime <- function(primes) {
   if (length(primes)==0) {
     init = 1
