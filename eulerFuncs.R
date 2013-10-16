@@ -60,3 +60,16 @@ primeFac <- function(fact, breakout = FALSE, suppress = FALSE) {
   factors <- append(factors, fact) 
   return (factors)
 }
+
+nextPal <- function(palin, dir = -1) {
+  palin <- as.character(palin)
+  digits <- nchar(palin)
+  digs <- vector()
+  for (i in 1:digits) {
+    thisDig <- asnumeric(substr(palin,i,i))
+    digs <- append(digs, thisDig)
+  }
+  for (i in (digits:as.integer(digits/2+1)) {
+    while(digs[i]==digs[i-1])
+  } 
+}
